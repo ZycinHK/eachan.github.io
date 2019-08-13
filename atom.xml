@@ -6,7 +6,7 @@
   <link href="/eachan.github.io/atom.xml" rel="self"/>
   
   <link href="https://zycinhk.github.io/"/>
-  <updated>2019-08-13T01:21:09.932Z</updated>
+  <updated>2019-08-13T02:05:40.228Z</updated>
   <id>https://zycinhk.github.io/</id>
   
   <author>
@@ -17,28 +17,27 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Home</title>
-    <link href="https://zycinhk.github.io/2019/08/13/hello-world/"/>
-    <id>https://zycinhk.github.io/2019/08/13/hello-world/</id>
-    <published>2019-08-13T01:21:09.932Z</published>
-    <updated>2019-08-13T01:21:09.932Z</updated>
+    <title>解决hexo部署异常</title>
+    <link href="https://zycinhk.github.io/2019/08/13/%E8%A7%A3%E5%86%B3hexo%E9%83%A8%E7%BD%B2%E5%BC%82%E5%B8%B8/"/>
+    <id>https://zycinhk.github.io/2019/08/13/解决hexo部署异常/</id>
+    <published>2019-08-13T01:46:10.000Z</published>
+    <updated>2019-08-13T02:05:40.228Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to my Blog! I am a developer from HUAWEI 2012 LAB and mainly focused on VR and vedio media field.</p><h3 id="Depth-selfie"><a href="#Depth-selfie" class="headerlink" title="Depth selfie"></a>Depth selfie</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#depth Camera</span></span><br><span class="line"><span class="keyword">char</span>* testImg=depthCamera.outframes;</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/ZycinHK/eachan-blog/master/5.JPG" alt="5"></p>]]></content>
+    <content type="html"><![CDATA[<h4 id="背景：-换了一台电脑下拉源码之后，hexo-d-报错-【fatal-in-unpopulated-submodule-‘-deploy-git’】"><a href="#背景：-换了一台电脑下拉源码之后，hexo-d-报错-【fatal-in-unpopulated-submodule-‘-deploy-git’】" class="headerlink" title="背景： 换了一台电脑下拉源码之后，hexo d 报错 【fatal: in unpopulated submodule ‘.deploy_git’】"></a>背景： 换了一台电脑下拉源码之后，hexo d 报错 【fatal: in unpopulated submodule ‘.deploy_git’】</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">fatal: <span class="keyword">in</span> unpopulated submodule <span class="string">'.deploy_git'</span></span><br><span class="line"></span><br><span class="line">FATAL Something<span class="string">'s wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.html</span></span><br><span class="line"><span class="string">Error: Spawn failed</span></span><br><span class="line"><span class="string">    at ChildProcess.&lt;anonymous&gt; 。。。。。。】</span></span><br></pre></td></tr></table></figure><p>目前找到的解决方案是，删除blog下的，.deploy_git文件夹，然后重新clean，hexo g， 然后再hexo d就可以了；</p><p>或者</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ rm -rf .deploy_git</span><br></pre></td></tr></table></figure><p>** 网上也有人说安装相关依赖也能解决：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git –save</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;Welcome to my Blog! I am a developer from HUAWEI 2012 LAB and mainly focused on VR and vedio media field.&lt;/p&gt;
-&lt;h3 id=&quot;Depth-selfie&quot;&gt;&lt;a hr
+        &lt;h4 id=&quot;背景：-换了一台电脑下拉源码之后，hexo-d-报错-【fatal-in-unpopulated-submodule-‘-deploy-git’】&quot;&gt;&lt;a href=&quot;#背景：-换了一台电脑下拉源码之后，hexo-d-报错-【fatal-in-unpopulate
       
     
     </summary>
     
-      <category term="个人简介" scheme="https://zycinhk.github.io/categories/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/"/>
+      <category term="hexo" scheme="https://zycinhk.github.io/categories/hexo/"/>
     
     
-      <category term="深度相机自拍" scheme="https://zycinhk.github.io/tags/%E6%B7%B1%E5%BA%A6%E7%9B%B8%E6%9C%BA%E8%87%AA%E6%8B%8D/"/>
+      <category term="hexo部署报错" scheme="https://zycinhk.github.io/tags/hexo%E9%83%A8%E7%BD%B2%E6%8A%A5%E9%94%99/"/>
     
   </entry>
   
@@ -72,7 +71,7 @@
     <link href="https://zycinhk.github.io/2019/08/12/%E5%A4%87%E4%BB%BDhexo%E5%8D%9A%E5%AE%A2%E6%BA%90%E7%A0%81/"/>
     <id>https://zycinhk.github.io/2019/08/12/备份hexo博客源码/</id>
     <published>2019-08-12T11:30:50.000Z</published>
-    <updated>2019-08-13T01:21:09.933Z</updated>
+    <updated>2019-08-13T02:04:15.715Z</updated>
     
     <content type="html"><![CDATA[<h4 id="using-for-back-up-blog-project-including-any-private-project"><a href="#using-for-back-up-blog-project-including-any-private-project" class="headerlink" title="using for  back up blog project including any private project"></a>using for  back up blog project including any private project</h4><ol><li><p>在要备份的文件夹进入git bash；</p></li><li><p>git init之后会多出一个.git文件夹；</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure></li><li><p>创建 SSH KEY，使用rsa加密,  运行以下命令，会在C:\User\ .ssh文件夹下生成id_rsa和id_rsa.pub；</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"注册github时使用的邮箱"</span></span><br></pre></td></tr></table></figure></li><li><p>在github个人账户上配置SSH，个人设置-&gt; SSH and GPG keys-&gt; add SSH</p><p>将 id_rsa.pub里面的公钥粘贴到github个人设置的ssh key中；</p></li><li><p>验证是否ssh已经配置成功</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure></li></ol><ol start="6"><li><p>创建一个new repository</p></li><li><p>全局配置git username 和email</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name<span class="string">"eachan"</span></span><br><span class="line">$ git config --global user.email<span class="string">"****@****.com"</span></span><br></pre></td></tr></table></figure></li></ol><ol start="8"><li><p>添加Git远程地址</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add origin git@github:XXXX/XXXXX.git</span><br></pre></td></tr></table></figure></li><li><p>最后关键的push指令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git add .</span><br><span class="line">$ git commit -m <span class="string">"上传的信息"</span></span><br><span class="line">$ git push origin master //git push -u origin master --force</span><br></pre></td></tr></table></figure><ul><li>若出现 fatal ：remote origin already exists</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote rm origin</span><br></pre></td></tr></table></figure></li></ol>]]></content>
     
@@ -88,7 +87,7 @@
       <category term="hexo" scheme="https://zycinhk.github.io/categories/hexo/"/>
     
     
-      <category term="备忘技术总结" scheme="https://zycinhk.github.io/tags/%E5%A4%87%E5%BF%98%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/"/>
+      <category term="github代码备份" scheme="https://zycinhk.github.io/tags/github%E4%BB%A3%E7%A0%81%E5%A4%87%E4%BB%BD/"/>
     
   </entry>
   
@@ -119,6 +118,32 @@
     
     
       <category term="疯狂轰炸聊天窗" scheme="https://zycinhk.github.io/tags/%E7%96%AF%E7%8B%82%E8%BD%B0%E7%82%B8%E8%81%8A%E5%A4%A9%E7%AA%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Home</title>
+    <link href="https://zycinhk.github.io/2019/06/06/hello-world/"/>
+    <id>https://zycinhk.github.io/2019/06/06/hello-world/</id>
+    <published>2019-06-05T22:16:16.000Z</published>
+    <updated>2019-08-13T02:08:14.719Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to my Blog! I am a developer from HUAWEI 2012 LAB and mainly focused on VR and vedio media field.</p><h3 id="Depth-selfie"><a href="#Depth-selfie" class="headerlink" title="Depth selfie"></a>Depth selfie</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#depth Camera</span></span><br><span class="line"><span class="keyword">char</span>* testImg=depthCamera.outframes;</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/ZycinHK/eachan-blog/master/5.JPG" alt="5"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to my Blog! I am a developer from HUAWEI 2012 LAB and mainly focused on VR and vedio media field.&lt;/p&gt;
+&lt;h3 id=&quot;Depth-selfie&quot;&gt;&lt;a hr
+      
+    
+    </summary>
+    
+      <category term="个人简介" scheme="https://zycinhk.github.io/categories/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/"/>
+    
+    
+      <category term="深度相机自拍" scheme="https://zycinhk.github.io/tags/%E6%B7%B1%E5%BA%A6%E7%9B%B8%E6%9C%BA%E8%87%AA%E6%8B%8D/"/>
     
   </entry>
   
