@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="github代码备份,">
+  <meta name="keywords" content="备忘技术总结,">
 
 
 
@@ -88,18 +88,18 @@
 
 
 
-<meta name="description" content="using for  back up blog project including any private project 在要备份的文件夹进入git bash；  git init之后会多出一个.git文件夹； 1$ git init  创建 SSH KEY，使用rsa加密,  运行以下命令，会在C:\User\ .ssh文件夹下生成id_rsa和id_rsa.pub； 1$ ssh-keyge">
-<meta name="keywords" content="github代码备份">
+<meta name="description" content="using for  back up blog project including any private project  在要备份的文件夹进入git bash；git init之后会多出一个.git文件夹；1$ git init  创建 SSH KEY，使用rsa加密,  运行以下命令，会在C:\User\ .ssh文件夹下生成id_rsa和id_rsa.pub；1$ ssh-keygen">
+<meta name="keywords" content="备忘技术总结">
 <meta property="og:type" content="article">
 <meta property="og:title" content="备份hexo博客源码">
 <meta property="og:url" content="https://zycinhk.github.io/2019/08/12/备份hexo博客源码/index.html">
 <meta property="og:site_name" content="Eachan&#39;s Blog">
-<meta property="og:description" content="using for  back up blog project including any private project 在要备份的文件夹进入git bash；  git init之后会多出一个.git文件夹； 1$ git init  创建 SSH KEY，使用rsa加密,  运行以下命令，会在C:\User\ .ssh文件夹下生成id_rsa和id_rsa.pub； 1$ ssh-keyge">
+<meta property="og:description" content="using for  back up blog project including any private project  在要备份的文件夹进入git bash；git init之后会多出一个.git文件夹；1$ git init  创建 SSH KEY，使用rsa加密,  运行以下命令，会在C:\User\ .ssh文件夹下生成id_rsa和id_rsa.pub；1$ ssh-keygen">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-08-13T02:04:15.715Z">
+<meta property="og:updated_time" content="2019-08-13T06:38:14.260Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="备份hexo博客源码">
-<meta name="twitter:description" content="using for  back up blog project including any private project 在要备份的文件夹进入git bash；  git init之后会多出一个.git文件夹； 1$ git init  创建 SSH KEY，使用rsa加密,  运行以下命令，会在C:\User\ .ssh文件夹下生成id_rsa和id_rsa.pub； 1$ ssh-keyge">
+<meta name="twitter:description" content="using for  back up blog project including any private project  在要备份的文件夹进入git bash；git init之后会多出一个.git文件夹；1$ git init  创建 SSH KEY，使用rsa加密,  运行以下命令，会在C:\User\ .ssh文件夹下生成id_rsa和id_rsa.pub；1$ ssh-keygen">
 
 
 
@@ -352,51 +352,27 @@
       
 
       
-        <h4 id="using-for-back-up-blog-project-including-any-private-project"><a href="#using-for-back-up-blog-project-including-any-private-project" class="headerlink" title="using for  back up blog project including any private project"></a>using for  back up blog project including any private project</h4><ol>
-<li><p>在要备份的文件夹进入git bash；</p>
-</li>
-<li><p>git init之后会多出一个.git文件夹；</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>创建 SSH KEY，使用rsa加密,  运行以下命令，会在C:\User\ .ssh文件夹下生成id_rsa和id_rsa.pub；</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"注册github时使用的邮箱"</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>在github个人账户上配置SSH，个人设置-&gt; SSH and GPG keys-&gt; add SSH</p>
-<p>将 id_rsa.pub里面的公钥粘贴到github个人设置的ssh key中；</p>
-</li>
-<li><p>验证是否ssh已经配置成功</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+        <blockquote>
+<p> using for  back up blog project including any private project</p>
+</blockquote>
+<h4 id="在要备份的文件夹进入git-bash；"><a href="#在要备份的文件夹进入git-bash；" class="headerlink" title="在要备份的文件夹进入git bash；"></a>在要备份的文件夹进入git bash；</h4><h4 id="git-init之后会多出一个-git文件夹；"><a href="#git-init之后会多出一个-git文件夹；" class="headerlink" title="git init之后会多出一个.git文件夹；"></a>git init之后会多出一个.git文件夹；</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure>
 
+<h4 id="创建-SSH-KEY，使用rsa加密-运行以下命令，会在C-User-ssh文件夹下生成id-rsa和id-rsa-pub；"><a href="#创建-SSH-KEY，使用rsa加密-运行以下命令，会在C-User-ssh文件夹下生成id-rsa和id-rsa-pub；" class="headerlink" title="创建 SSH KEY，使用rsa加密,  运行以下命令，会在C:\User\ .ssh文件夹下生成id_rsa和id_rsa.pub；"></a>创建 SSH KEY，使用rsa加密,  运行以下命令，会在C:\User\ .ssh文件夹下生成id_rsa和id_rsa.pub；</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"注册github时使用的邮箱"</span></span><br></pre></td></tr></table></figure>
 
+<h4 id="在github个人账户上配置SSH，个人设置-gt-SSH-and-GPG-keys-gt-add-SSH"><a href="#在github个人账户上配置SSH，个人设置-gt-SSH-and-GPG-keys-gt-add-SSH" class="headerlink" title="在github个人账户上配置SSH，个人设置-&gt; SSH and GPG keys-&gt; add SSH"></a>在github个人账户上配置SSH，个人设置-&gt; SSH and GPG keys-&gt; add SSH</h4><p>将 id_rsa.pub里面的公钥粘贴到github个人设置的ssh key中；</p>
+<h4 id="验证是否ssh已经配置成功"><a href="#验证是否ssh已经配置成功" class="headerlink" title="验证是否ssh已经配置成功"></a>验证是否ssh已经配置成功</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure>
 
-</li>
-</ol>
-<ol start="6">
-<li><p>创建一个new repository</p>
-</li>
-<li><p>全局配置git username 和email</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name<span class="string">"eachan"</span></span><br><span class="line">$ git config --global user.email<span class="string">"****@****.com"</span></span><br></pre></td></tr></table></figure>
+<h4 id="创建一个new-repository"><a href="#创建一个new-repository" class="headerlink" title="创建一个new repository"></a>创建一个new repository</h4><h4 id="全局配置git-username-和email"><a href="#全局配置git-username-和email" class="headerlink" title="全局配置git username 和email"></a>全局配置git username 和email</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name<span class="string">"eachan"</span></span><br><span class="line">$ git config --global user.email<span class="string">"****@****.com"</span></span><br></pre></td></tr></table></figure>
 
+<h4 id="添加Git远程地址"><a href="#添加Git远程地址" class="headerlink" title="添加Git远程地址"></a>添加Git远程地址</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add origin git@github:XXXX/XXXXX.git</span><br></pre></td></tr></table></figure>
 
-
-</li>
-</ol>
-<ol start="8">
-<li><p>添加Git远程地址</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add origin git@github:XXXX/XXXXX.git</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>最后关键的push指令</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git add .</span><br><span class="line">$ git commit -m <span class="string">"上传的信息"</span></span><br><span class="line">$ git push origin master //git push -u origin master --force</span><br></pre></td></tr></table></figure>
+<h4 id="最后关键的push指令"><a href="#最后关键的push指令" class="headerlink" title="最后关键的push指令"></a>最后关键的push指令</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git add .</span><br><span class="line">$ git commit -m <span class="string">"上传的信息"</span></span><br><span class="line">$ git push origin master //git push -u origin master --force</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>若出现 fatal ：remote origin already exists</li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote rm origin</span><br></pre></td></tr></table></figure>
 
-
-
-</li>
-</ol>
 
       
     </div>
@@ -425,7 +401,7 @@
       
         <div class="post-tags">
           
-            <a href="/eachan.github.io/tags/github代码备份/" rel="tag"><i class="fa fa-tag"></i> github代码备份</a>
+            <a href="/eachan.github.io/tags/备忘技术总结/" rel="tag"><i class="fa fa-tag"></i> 备忘技术总结</a>
           
         </div>
       
@@ -591,7 +567,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#using-for-back-up-blog-project-including-any-private-project"><span class="nav-number">1.</span> <span class="nav-text">using for  back up blog project including any private project</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#在要备份的文件夹进入git-bash；"><span class="nav-number">1.</span> <span class="nav-text">在要备份的文件夹进入git bash；</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#git-init之后会多出一个-git文件夹；"><span class="nav-number">2.</span> <span class="nav-text">git init之后会多出一个.git文件夹；</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建-SSH-KEY，使用rsa加密-运行以下命令，会在C-User-ssh文件夹下生成id-rsa和id-rsa-pub；"><span class="nav-number">3.</span> <span class="nav-text">创建 SSH KEY，使用rsa加密,  运行以下命令，会在C:\User\ .ssh文件夹下生成id_rsa和id_rsa.pub；</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#在github个人账户上配置SSH，个人设置-gt-SSH-and-GPG-keys-gt-add-SSH"><span class="nav-number">4.</span> <span class="nav-text">在github个人账户上配置SSH，个人设置-&gt; SSH and GPG keys-&gt; add SSH</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#验证是否ssh已经配置成功"><span class="nav-number">5.</span> <span class="nav-text">验证是否ssh已经配置成功</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建一个new-repository"><span class="nav-number">6.</span> <span class="nav-text">创建一个new repository</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#全局配置git-username-和email"><span class="nav-number">7.</span> <span class="nav-text">全局配置git username 和email</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加Git远程地址"><span class="nav-number">8.</span> <span class="nav-text">添加Git远程地址</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最后关键的push指令"><span class="nav-number">9.</span> <span class="nav-text">最后关键的push指令</span></a></li></ol></div>
             
 
           </div>
@@ -612,8 +588,8 @@
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
-  <span class="with-love">
-	<i class="fa fa-heart" aria-hidden="true"></i>
+  <span class="with-love" id="heart">
+  <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">CR ID：港中文野猪骑士</span>
 
