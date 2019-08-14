@@ -6,7 +6,7 @@
   <link href="/eachan.github.io/atom.xml" rel="self"/>
   
   <link href="https://zycinhk.github.io/"/>
-  <updated>2019-08-13T09:41:25.656Z</updated>
+  <updated>2019-08-14T09:15:01.755Z</updated>
   <id>https://zycinhk.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何设置页面防COPY</title>
+    <link href="https://zycinhk.github.io/2019/08/14/%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE%E9%A1%B5%E9%9D%A2%E9%98%B2copy/"/>
+    <id>https://zycinhk.github.io/2019/08/14/如何设置页面防copy/</id>
+    <published>2019-08-14T07:41:46.000Z</published>
+    <updated>2019-08-14T09:15:01.755Z</updated>
+    
+    <content type="html"><![CDATA[<p><font color="red"> 此方法目前只能部分限制</font></p><p>很多时候，我们不希望我们写的blog或者微信公众号里的原创文章被人轻易拷贝或者爬虫爬取，但是由于很多人暂时知识产权保护意识不强，造成即使很多博客文章加了转载需要注明出处等copyright，依然Ctrl C+V满天飞；</p><blockquote><p>寻找一种修改css的方式，可以限制右键选中，及copy</p></blockquote><p>对于包含php的页脚文件，可以加在footer.php中；</p><p>对于Hexo的NexT主题下，我们可以在</p><p><span style="text-shadow: 5px 5px 5px #00ff00">\themes\next\source\css_common\components\post</span>路径下的post.styl文件中搜索body，在post body中加入如下css配置：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">-webkit-touch-callout: none;</span><br><span class="line">-webkit-user-select: none;</span><br><span class="line">-khtml-user-select: none;</span><br><span class="line">-moz-user-select: none;</span><br><span class="line">-ms-user-select: none;</span><br><span class="line">user-select: none;</span><br></pre></td></tr></table></figure><blockquote><p>待解决：</p><ol><li>styl文件与css的关系</li><li>次方法只适用于浅度防copy，但是源码却不能隐藏，因此任然可以被爬虫脚本解析</li></ol></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;font color=&quot;red&quot;&gt; 此方法目前只能部分限制&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;很多时候，我们不希望我们写的blog或者微信公众号里的原创文章被人轻易拷贝或者爬虫爬取，但是由于很多人暂时知识产权保护意识不强，造成即使很多博客文章加了转载需要注明出处等copyrig
+      
+    
+    </summary>
+    
+      <category term="Web dvp" scheme="https://zycinhk.github.io/categories/Web-dvp/"/>
+    
+    
+      <category term="博客防COPY" scheme="https://zycinhk.github.io/tags/%E5%8D%9A%E5%AE%A2%E9%98%B2COPY/"/>
+    
+      <category term="styl文件学习" scheme="https://zycinhk.github.io/tags/styl%E6%96%87%E4%BB%B6%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>NexT主题美化（一）</title>
